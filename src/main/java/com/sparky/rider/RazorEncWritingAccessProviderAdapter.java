@@ -29,7 +29,6 @@ public class RazorEncWritingAccessProviderAdapter extends ClassVisitor {
         @Override
         public void visitLdcInsn(Object value) {
             if (Objects.equals(value, "Razor")) {
-                System.out.println("RazorEncWritingAccessProviderMethodAdapter:visitLdcInsn() -> " + value);
                 super.visitLdcInsn("Blazor");
             } else {
                 super.visitLdcInsn(value);
