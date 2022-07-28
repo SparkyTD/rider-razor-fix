@@ -15,4 +15,4 @@ This project is basically a [Java Agent](https://stackify.com/what-are-java-agen
 3. Add this at the end of the file: `-javaagent:C:\\Users\\Sparky\\AppData\\Local\\JetBrains\\rider-razor-fix.jar`
 4. Restart Rider
 
-If you accidentally misspell something in the VM options file, or delete the downloaded .jar file, Rider won't be able to start anymore. In this case read [this](https://www.jetbrains.com/help/rider/Tuning_the_IDE.html) or [this](https://www.jetbrains.com/help/rider/Directories_Used_by_the_IDE_to_Store_Settings_Caches_Plugins_and_Logs.html#config-directory) article to locate your .vmoptions file, and manually remove the `-javaagent` flag.
+If you accidentally misspell something in the VM options file, or delete the downloaded .jar file, Rider won't be able to start anymore. In this case read [this](https://www.jetbrains.com/help/rider/Tuning_the_IDE.html) or [this](https://www.jetbrains.com/help/rider/Directories_Used_by_the_IDE_to_Store_Settings_Caches_Plugins_and_Logs.html#config-directory) article to locate your .vmoptions file, and manually remove the `javaagent` flag.
