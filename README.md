@@ -12,7 +12,7 @@ In the case of `.razor` files, this class is `com.jetbrains.rider.ideaInterop.fi
 This project is basically a [Java Agent](https://stackify.com/what-are-java-agents-and-how-to-profile-with-them/#:~:text=Java%20agents%20are%20a%20special,ve%20existed%20since%20Java%205.) that modifies the mentioned class before it gets loaded into the java runtime. While loading the class, it replaces the string "Razor" with "Blazor" in the `isSupportedFile` method to ensure that the "Apply Changes" button appears after modifying a .razor file.
 
 ## Installation
-1 Download a prebuilt binary (e.g. `%localappdata%\JetBrains\rider-razor-fix.jar`), or optionally clone this repo and build it yourself. Make sure to use the `shadowJar` gradle task to generate the .jar file
+1. Download a prebuilt binary (e.g. `%localappdata%\JetBrains\rider-razor-fix.jar`), or optionally clone this repo and build it yourself. Make sure to use the `shadowJar` gradle task to generate the .jar file
 2. Open Rider, go to Help > Edit Custom VM Options
 3. Add this at the end of the file: `-javaagent:C:\\Users\\Sparky\\AppData\\Local\\JetBrains\\rider-razor-fix.jar`. Make sure you type the exact full path without quotes, and replace all `\` characters with `\\`. If there are spaces in the file's full path, move it to a different location so there are no spaces.
 4. Restart Rider
