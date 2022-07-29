@@ -1,7 +1,7 @@
 # IMPORTANT: This tool is highly experimental, and it might break your Rider installation if you don't follow the installation instructions. Only works with EAP version 2022.2 EAP 11, and only with smaller projects. 
 ___
 # RiderRazorFix
-This is a simple bytecode modification to the JetBrains Rider IDE that enables the EditAndContinue feature for `.razor` files **Blazor Server** applications. This means that whenever you edit a Razor file, Rider will display the "Sources are modified" prompt, allowing you to "Apply changes" and hot-reload the project. Not that this only works for Blazor Server applications. **Blazor WASM is not supported by this tool.** This tool is a partial fix for [RIDER-69647](https://youtrack.jetbrains.com/issue/RIDER-69647).
+This is a simple bytecode modification to the JetBrains Rider IDE that enables the EditAndContinue feature for `.razor` files **Blazor Server** applications. This means that whenever you edit a Razor file, Rider will display the "Sources are modified" prompt, allowing you to "Apply changes" and hot-reload the project. Note that this only works for Blazor Server applications. **Blazor WASM is not supported by this tool.** This tool is a partial fix for [RIDER-69647](https://youtrack.jetbrains.com/issue/RIDER-69647).
 ___
 ## Why can't Rider hot reload .razor files by default?
 Actually it can, it just doesn't want to. Everything needed to hot-reload a Blazor Server project is already fully implemented in Rider, with the exception of one small detail. Without going too deep into the inner workings of EnC in Rider, there are a set of java class that contain the logic that decides whether or not the hot reload notification should be displayed after a file was modified.
