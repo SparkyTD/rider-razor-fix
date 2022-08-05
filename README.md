@@ -1,4 +1,5 @@
 # IMPORTANT: This tool is highly experimental, and it might break your Rider installation if you don't follow the installation instructions. Only tested with Rider 2022.2, and with smaller projects.
+# UPDATE: A JetBrains representative confirmed that my fix was applied from their side. This repo will be taken down once the fix ships with a release.
 ___
 # RiderRazorFix
 This is a simple bytecode modification to the JetBrains Rider IDE that enables the EditAndContinue feature for `.razor` files **Blazor Server** applications. This means that whenever you edit a Razor file, Rider will display the "Sources are modified" prompt, allowing you to "Apply changes" and hot-reload the project. Note that this only works for Blazor Server applications. **Blazor WASM is not supported by this tool.** This tool is a partial fix for [RIDER-69647](https://youtrack.jetbrains.com/issue/RIDER-69647).
